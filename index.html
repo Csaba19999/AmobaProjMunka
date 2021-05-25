@@ -12,20 +12,42 @@ and open the template in the editor.
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="John Doe">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="amoba.js" type="text/javascript"></script>
     </head>
     <body>
-        <main>
+        <main class="mainGrid">
             <header>
                 <img src="kepek/head.png" alt=""/>
             </header>
-            <article>
-                
+            <article class="artickleGrid">
+                <div id="menu">
+                    <form>
+                        <label for="jNev">Játékos név: </label><br>
+                        <input class="menuPad" id="jatekosNev" type="text" name="jNev"><br>
+                        <label>Pálya mérete: </label><br>
+                        <div class="slidecontainer">
+                            <input type="range" min="3" max="9" value="3" step="2" class="slider" id="myRange">
+                            <label class="menuPad" id="palyaLable"></label>
+                        </div><br>
+                        <input class="menuPad" id="startButton" type="button" value="Start"><br>
+                        <input  class="menuPad" id="ujButton" type="button" disabled="" value="Új játék"><br>
+                        <button class="menuPad" id="muteButton" type="button"><img src="kepek/mute.png" alt=""/></button><br>
+                    </form><br>
+                    <p id="szabaly">A játékot ketten játszátok.<br>
+                        felváltva teszitek az X-O jeleket.<br>
+                        3-as mezőn 3 szimbólum győz<br>
+                        5-as mezőn 4 szimbólum győz<br>
+                        7-as mezőn 5 szimbólum győz<br>
+                        9-as mezőn 6 szimbólum győz<br></p>
+                </div>
             </article>
-            <aside>
-                
+            <aside class="assideGrid">
+                <div>div</div>
             </aside>
-            <footer>
-                
+            <footer class="footerGrid">
+                <p>Footer</p>
             </footer>
         </main>
     </body>

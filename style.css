@@ -1,10 +1,132 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2021.05.18., 13:07:54
-    Author     : Csabi
-*/
 
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("kepek/back.jpg ");
+}
+main{
+    margin: auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    height: 1000px;
+    max-height: 1000px;
+}
+header img{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+#menu{
+    margin: auto;
+    max-width: 300px;
+    border: 2px solid #ff75b6;
+    border-radius: 6%;
+    -webkit-box-shadow: 0px 0px 14px 0px #FF33B7; 
+    box-shadow: 0px 0px 14px 0px #FF33B7;
+    text-align: center;
+    justify-content: center;
+    height: 600px;
+    background-color: activeborder;
+    margin-top: 120px;
+
+       
+}
+#menu img{
+    width: 30px;
+    height: 30px;
+}
+form{
+    margin-top: 50px;
+}
+.menuPad{
+    margin-bottom: 50px;
+}
+#ujButton,#startButton{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+#muteButton{
+    float: left;
+    margin-left: 50px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+#szabaly{
+    text-align: center;
+}
+.slidecontainer {
+  width: fit-content; /* Width of the outside container */
+  margin: auto;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 10%;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 30%;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.mainGrid{
+  display: grid;
+  grid-gap: 1rem;
+  /*grid-template-columns: 
+     100px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  grid-template-areas: 
+      'h h h h h h h h h h h h
+       a a a a a a a a m m m m
+       a a a a a a a a m m m m
+       a a a a a a a a m m m m
+       a a a a a a a a m m m m
+       a a a a a a a a m m m m
+       a a a a a a a a m m m m
+       f f f f f f f f f f f f';  
+
+}
+header{
+    grid-area: h;
+    
+}
+.artickleGrid{
+    grid-area: m;
+    
+}
+.assideGrid{
+    grid-area: a;
+    
+}
+.footerGrid{
+    grid-area: f;
+    
+}
